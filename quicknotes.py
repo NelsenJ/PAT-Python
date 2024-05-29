@@ -101,7 +101,6 @@ class QuickNotesApp:
     def load_notes(self):
         self.notes_listbox.delete(0, tk.END)
         for note in self.notes:
-            # Tambahkan spasi sebagai padding di awal dan akhir teks catatan
             padded_note = f"  {note['text']}  "
             self.notes_listbox.insert(tk.END, padded_note)
     
